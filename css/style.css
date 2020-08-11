@@ -2,13 +2,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}/**Reset das configurações padrões do css para o site**/
 
 html,body{
 	background-image:url(../images/fundoTecno.png);
 	height: 2000px;
 	background-size: cover 
-}
+}/**Altura e Imagen de fundo de todo o site**/
 
 .header{
 	top: 0;
@@ -16,12 +16,7 @@ html,body{
 	height: 40px;
 	background-color: #00010D;
 	position: fixed;
-}
-
-.center{
-	width: 1280px;
-	margin: 0 auto;
-}
+}/** Poisicionamento e estilo do cabeçalho**/ 
 
 div.backgroundImage{
 	background-image:url(../images/BackgroundCyberpunk.png);
@@ -29,53 +24,43 @@ div.backgroundImage{
 	height: 950px;
 	background-size: contain;
 	background-repeat: no-repeat;
-}
+}/** Poisicionamento e estilo do plano de fundo**/
 
  img#logo{
  	position: relative;
- 	top: 20%;
- 	left: 25%;
- 	width: 30%;
- 	height: 30%;
-
- 	
- }
+ 	left: 19%;
+ 	width: 40%;
+ 	height: 40%; 	
+ 	padding-top: 17px;
+ }/**Poisicionamento do logo na tela**/
 
 div.menuBox{
-
-	display:inline-block;
-	float: center;
-	margin-left: 16%;
+	margin-left: 10%;
 	margin-top: 10px;
-
-}
+}/**Posicionamento do menu na parte esquerda (Home, Aboout, ProjectRED)**/
 
 a.butMenu{
-
  	font-family: "Lemon Milk";
  	text-decoration: none;
  	border-bottom: 3px solid #F2E205;
  	margin-right: 19px;
  	font-size: 15px;
- 	font-weight: bolder;
- 	
- }
+ 	font-weight: bolder; 	
+ }/**Estilização dos botões na parte do menu a esquerda**/
 
 a.butMenu:visited{
 	color: #55C1D9;
-}
+}/** Efeito que matem a cor do menu em azul, mesmo sendo visitado**/
 
 a.butMenu:hover{
 	border-bottom: 3px solid #55C1D9;
-}
+}/**Efeito barra azul, caso o usuário passe o mouse por cima**/
 
 div.iconBox{
-	margin-right: 16%;
-	margin-top: 7px;
-	float: right;
-	
-}
-
+	margin-right: 5%;
+	margin-top: -21px;
+	float: right;	
+}/**Posicionamento do menu de icones a direita**/
 
 a.icon>img.icon{
 	width: 25px;
@@ -84,25 +69,25 @@ a.icon>img.icon{
 	border: 0.5px solid black;
 	border-radius: 4px;
 	box-sizing: border-box;
-}
+}/**Estilização dos icones no menu icone**/
 
 a.icon>img.icon:hover{	
-
-	background-color: #F2E205;
-	
-}
+	background-color: #F2E205;	
+}/**Efeito fundo do icone amarelo, caso o usuário passe o mouse**/
 
 div.formBackground{
-	width: 30%;
-	height: 66%;
+	width: 650px;
+	height: 625px;
 	background-color: #55C1D9;
 	position: absolute;
 	float: right;
 	top: 20%;
-	right: 7%;
-}
+	right: 2%;
+}/**Posicionamento do fundo do formulário (parte azul)**/
 
 div.form{
+	display: inline-block;
+	text-align: center;
 	width: 100%;
 	height: 100%;
 	background-image:url(../images/fundoTecno.png);
@@ -110,5 +95,57 @@ div.form{
 	float: right;
 	top: 2%;
 	right: 2%;
-	
+
+} /**Posicionamento do formulário na tela**/
+
+.form input[type="text"]{
+	display: inline-block;
+	width: 80%;
+	padding: 4%;
+	border-radius: 7px;
+	margin-top: 30px;
+
+}
+
+.form input[type="text"],.form select:focus{
+	outline: 0;
+}
+
+.form select{
+	width: 80%;
+	margin-top: 30px;
+	padding: 4%;
+	border-radius: 7px;
+	background-color: white;
+}
+
+.checkbox{
+	margin-top: 30px;
+}
+
+.checkbox span{
+	color: #55C1D9;
+	font-family: Roboto;
+}
+
+.botao{
+	margin-top: 30px;
+}
+
+.botao input{
+	width: 50%;
+	height: 80px;
+	background-color: #55C1D9;
+	border: 0;
+	border-radius: 7px;
+	font-family: "Lemon Milk";
+	font-size: 30px;
+	color: white;
+}
+.botao input:focus{
+	outline: 0;
+}
+.botao input,.checkbox input:hover{
+	cursor: pointer;
+}
 }
