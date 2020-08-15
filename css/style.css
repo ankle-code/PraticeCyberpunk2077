@@ -5,9 +5,10 @@
 }/**Reset das configurações padrões do css para o site**/
 
 html,body{
+	width: 1890px;
 	background-image:url(../images/fundoTecno.png);
-	height: 2000px;
-	background-size: cover 
+	height: 2400px;
+	background-size: contain; 
 }/**Altura e Imagen de fundo de todo o site**/
 
 .header{
@@ -20,18 +21,22 @@ html,body{
 
 div.backgroundImage{
 	background-image:url(../images/BackgroundCyberpunk.png);
-	width: 100%;
+	width: 1903px;
 	height: 950px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }/** Poisicionamento e estilo do plano de fundo**/
 
+
+.logo{
+	width: 100%;
+	text-align: center;
+}
  img#logo{
- 	position: relative;
- 	left: 19%;
- 	width: 40%;
- 	height: 40%; 	
- 	padding-top: 17px;
+ 	width: 55%;
+ 	height: 55%; 	
+ 	padding-right: 250px;
+ 	
  }/**Poisicionamento do logo na tela**/
 
 div.menuBox{
@@ -50,7 +55,7 @@ a.butMenu{
 
 a.butMenu:visited{
 	color: #55C1D9;
-}/** Efeito que matem a cor do menu em azul, mesmo sendo visitado**/
+}/** Efeito que mantem a cor do menu em azul, mesmo sendo visitado**/
 
 a.butMenu:hover{
 	border-bottom: 3px solid #55C1D9;
@@ -79,9 +84,9 @@ div.formBackground{
 	width: 650px;
 	height: 625px;
 	background-color: #55C1D9;
-	position: absolute;
+	position: fixed;
 	float: right;
-	top: 20%;
+	top: 17%;
 	right: 2%;
 }/**Posicionamento do fundo do formulário (parte azul)**/
 
@@ -133,7 +138,7 @@ div.form{
 }
 
 .botao input{
-	width: 50%;
+	width: 300px;
 	height: 80px;
 	background-color: #55C1D9;
 	border: 0;
@@ -145,7 +150,191 @@ div.form{
 .botao input:focus{
 	outline: 0;
 }
-.botao input,.checkbox input:hover{
+.botao input:hover{
 	cursor: pointer;
+	background-color: #3caac2;
 }
+
+.conteudoMain {
+	width: 850px;
+	margin-left: 285px;
+	margin-top: -20px;
+}
+
+@font-face{
+	src: url(../fonts/Eletro.ttf);
+	font-family: "Eletro";
+}
+
+.conteudoMain h1.compre{
+	font-family: "Eletro";
+	font-size: 55px;
+	text-shadow: 5px 5px #55C1D9;
+
+}
+
+.conteudoMain h1{
+	text-align: right;
+}
+
+h1.prevenda{
+	font-family: "Eletro";
+	font-size: 75px;
+	text-shadow: 5px 5px #55C1D9;
+}
+
+
+.conteudoMain p{
+	text-align: center;
+	margin-left: 300px;
+	width: 500px;
+	font-family: Roboto;
+	font-size: 21px;
+	color: #55C1D9;
+	font-weight: bold;
+
+}
+
+.botao2{
+	margin-top: 30px;
+	margin-left: 731px;
+}
+
+.botao2 input{
+	width: 200px;
+	height: 50px;
+	background-color: #55C1D9;
+	border: 0;
+	border-radius: 7px;
+	font-family: "Lemon Milk";
+	font-size: 20px;
+	color: white;
+}
+.botao2 input:focus{
+	outline: 0;
+}
+.botao2 input:hover{
+	cursor: pointer;
+	background-color: #3caac2;
+}
+
+.titulo1{
+	width: 45%;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 200px;
+	
+}
+
+.titulo1 p{
+	width: 100%
+	margin-top: 50px;
+	background-color: #000011;
+	color: #1eaf9e;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.ImagenFundo1,.ImagenFundo2{
+	background-image:url(../images/fundoTecno.png);
+	background-size: cover;
+	height: 200px;
+}
+
+.IF1{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 1215px;
+	height: 180px;
+	background-image: url(../Images/ImagenFundo1.png);
+	background-size: cover;
+	border-right: 7% solid red;
+}
+
+.Subtitulo{
+	width: 100%;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+.Subtitulo img{
+	margin-left: 80px;
+	padding-right:100px;
+}
+
+.Descricao1{
+	width: 350px;
+	display: inline-block;
+	padding: 50px;
+	margin-left: 35px;
+	margin-top: -80px;
+}
+
+.Descricao1 p{
+	text-align: center;
+	margin-top: 50px;
+	background-color: #000011;
+	color: #1eaf9e;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.Descricao2{
+	width: 350px;
+	display: inline-block;
+	padding: 50px;
+	margin-left: 83px;
+	margin-top: -80px;
+}
+
+.Descricao2 p{
+	text-align: center;
+	color: #1eaf9e;
+	font-family: Roboto;
+	font-weight: bold;
+	background-color: #000011;
+}
+
+.Descricao3{
+	width: 300px;
+	display: inline-block;
+	padding: 50px;
+	margin-left: 67px;
+	margin-top: -90px;
+}
+
+.Descricao3 p{
+	text-align: center;
+	color: #1eaf9e;
+	font-family: Roboto;
+	font-weight: bold;
+	background-color: #000011;
+}
+
+.IF2{
+	margin-top: -20px;
+	width: 1215px;
+	height: 180px;
+	background-image: url(../Images/ImagenFundo3.png);
+	background-size: cover;
+	border-right: 7% solid red;
+}
+
+.ImgBonus{
+	width: 1210px;
+	margin-left: 67px;
+	margin-top: 55px;
+}
+
+.ImgBonus img{
+	margin-right: 193px;
+}
+
+.Rodape{
+	margin-top: 40px;
+	width: 1903px;
+	height: 100px;
+	background-image: url(../images/Rodape.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
